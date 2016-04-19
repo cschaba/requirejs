@@ -723,8 +723,8 @@ var requirejs, require, define;
         }
 
         Module = function (map) {
-            this.events = getOwn(undefEvents, map.id) || {};
             this.map = map;
+            this.events = getOwn(undefEvents, map.id) || {};
             this.shim = getOwn(config.shim, map.id);
             this.depExports = [];
             this.depMaps = [];
